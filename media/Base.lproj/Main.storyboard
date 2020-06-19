@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zea-K8-Ltp">
+                                <rect key="frame" x="131" y="170" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="gLo-Ha-rca"/>
+                                    <constraint firstAttribute="height" constant="30" id="o4p-xM-8LX"/>
+                                </constraints>
+                                <state key="normal" title="音频播放"/>
+                                <connections>
+                                    <action selector="audioPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyf-kM-XrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwC-PD-50Y">
+                                <rect key="frame" x="131" y="208" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fKj-j4-Dt0"/>
+                                    <constraint firstAttribute="width" constant="62" id="fL5-wM-hMp"/>
+                                </constraints>
+                                <state key="normal" title="音频录制"/>
+                                <connections>
+                                    <action selector="audioRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsc-kn-CXc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHz-FJ-JPk">
+                                <rect key="frame" x="222" y="208" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Cv-8x-V2f"/>
+                                    <constraint firstAttribute="width" constant="62" id="Ted-HK-WcZ"/>
+                                </constraints>
+                                <state key="normal" title="视频录制"/>
+                                <connections>
+                                    <action selector="videoRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4z1-vf-e7R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTV-IL-tHD">
+                                <rect key="frame" x="222" y="170" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="UO8-EG-HTa"/>
+                                    <constraint firstAttribute="height" constant="30" id="XFs-ik-21a"/>
+                                </constraints>
+                                <state key="normal" title="视频播放"/>
+                                <connections>
+                                    <action selector="videoPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAj-Bg-AAQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScU-c3-NjR">
+                                <rect key="frame" x="131" y="284" width="153" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ffmpeg编解码视频"/>
+                                <connections>
+                                    <action selector="ffmpegEnDecode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bhj-ED-L8V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-io-1cG">
+                                <rect key="frame" x="131" y="321" width="153" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="备用"/>
+                                <connections>
+                                    <action selector="ffmpegT0h264:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gg-Of-Pho"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlG-ke-IQF">
+                                <rect key="frame" x="118.5" y="246" width="177" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="97O-ac-dhh"/>
+                                    <constraint firstAttribute="width" constant="177" id="RWR-ko-6qU"/>
+                                </constraints>
+                                <state key="normal" title="音频编解码"/>
+                                <connections>
+                                    <action selector="encodeAndDecode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSU-UN-Tqd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HHz-FJ-JPk" firstAttribute="top" secondItem="vTV-IL-tHD" secondAttribute="bottom" constant="8" id="1Qm-bh-Mrq"/>
+                            <constraint firstItem="LlG-ke-IQF" firstAttribute="top" secondItem="IwC-PD-50Y" secondAttribute="bottom" constant="8" id="8DZ-lZ-Uud"/>
+                            <constraint firstItem="HHz-FJ-JPk" firstAttribute="leading" secondItem="IwC-PD-50Y" secondAttribute="trailing" constant="29" id="AU2-QM-lFF"/>
+                            <constraint firstItem="LlG-ke-IQF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EPy-1j-f0M"/>
+                            <constraint firstItem="vTV-IL-tHD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="UzJ-8e-GCS"/>
+                            <constraint firstItem="IwC-PD-50Y" firstAttribute="top" secondItem="zea-K8-Ltp" secondAttribute="bottom" constant="8" id="Zqb-zr-VzQ"/>
+                            <constraint firstItem="IwC-PD-50Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="cqp-30-XwO"/>
+                            <constraint firstItem="vTV-IL-tHD" firstAttribute="leading" secondItem="zea-K8-Ltp" secondAttribute="trailing" constant="29" id="fY1-eD-yAC"/>
+                            <constraint firstItem="zea-K8-Ltp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="l7a-jV-7Qn"/>
+                            <constraint firstItem="zea-K8-Ltp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="wke-7P-DiJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+</document>

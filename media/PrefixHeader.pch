@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  media
+//
+//  Created by 飞拍科技 on 2019/7/18.
+//  Copyright © 2019 飞拍科技. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import "Activities/EBDropdownList/EBDropdownListView.h"
+#endif
+
+#import "ZSMedia/Vender/cppcommon/CLog.h"
+
+#endif /* PrefixHeader_pch */
